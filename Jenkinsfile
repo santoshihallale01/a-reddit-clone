@@ -5,9 +5,9 @@ pipeline {
  AWS_DEFAULT_REGION="ap-south-1" 
  IMAGE_REPO_NAME="demo-ecr"
  IMAGE_TAG="latest"
-CLUSTER_NAME="reddit-app"
-SERVICE_NAME="reddit-clone"
-TASK_DEFINITION_NAME="reddit-code"
+CLUSTER_NAME="reddit-cluster"
+SERVICE_NAME="redit-service"
+TASK_DEFINITION_NAME="reddit-task"
 DESIRED_COUNT="2"
  REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
  }
