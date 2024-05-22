@@ -6,8 +6,8 @@ pipeline {
  IMAGE_REPO_NAME="demo-ecr"
  IMAGE_TAG="latest"
 CLUSTER_NAME="reddit-app"
-SERVICE_NAME="reddit-code"
-TASK_DEFINITION_NAME="reddit-clone"
+SERVICE_NAME="reddit-clone"
+TASK_DEFINITION_NAME="reddit-code"
 DESIRED_COUNT="2"
  REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
  }
@@ -48,7 +48,7 @@ DESIRED_COUNT="2"
  }
  }
 }
-stage('Ecr Deploy'){
+stage('Ecs Deploy'){
          steps{
                 script {
                  sh """chmod +x script.sh"""
