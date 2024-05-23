@@ -46,8 +46,7 @@ DESIRED_COUNT="2"
  }
  }
  }
- }
-}
+
 stage('Ecs Deploy'){
          steps{
                 script {
