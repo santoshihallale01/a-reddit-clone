@@ -55,7 +55,8 @@ stage('Ecs Deploy'){
              }
             }
         }
-        
+ }
+}     
             
 	 
           
